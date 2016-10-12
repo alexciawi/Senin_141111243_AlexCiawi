@@ -17,7 +17,7 @@ namespace Latihan_2_1
             InitializeComponent();
             DateTime start = new DateTime(2016, 1, 1);
             DateTime end = new DateTime(2016, 12, 31);
-            while (start < end)
+            while (start <= end)
             {
                 if(start.DayOfWeek==DayOfWeek.Saturday || 
                     start.DayOfWeek == DayOfWeek.Sunday)
@@ -71,6 +71,19 @@ namespace Latihan_2_1
         private void Form1_Load(object sender, EventArgs e)
         {
             numericUpDown1.Minimum = 1;
+        }
+
+        private void mesbox(object sender, DateRangeEventArgs e)
+        {
+            DateTime birthday = new DateTime(2016, 3, 29);
+            if (monthCalendar1.SelectionStart.DayOfWeek==DayOfWeek.Sunday || monthCalendar1.SelectionStart.DayOfWeek == DayOfWeek.Saturday)
+            {
+                MessageBox.Show("Holiday!!!");
+            }
+            else if (monthCalendar1.SelectionStart.Date==birthday)
+            {
+                MessageBox.Show("Alex's Birthday!!!");
+            }
         }
     }
 }
