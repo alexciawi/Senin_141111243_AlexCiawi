@@ -92,9 +92,9 @@
             // 
             this.TxtHasil.Enabled = false;
             this.TxtHasil.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHasil.Location = new System.Drawing.Point(400, 71);
+            this.TxtHasil.Location = new System.Drawing.Point(400, 43);
             this.TxtHasil.Name = "TxtHasil";
-            this.TxtHasil.Size = new System.Drawing.Size(247, 96);
+            this.TxtHasil.Size = new System.Drawing.Size(410, 173);
             this.TxtHasil.TabIndex = 4;
             this.TxtHasil.Text = "";
             // 
@@ -102,7 +102,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(394, 37);
+            this.label3.Location = new System.Drawing.Point(478, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(261, 31);
             this.label3.TabIndex = 2;
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 228);
+            this.ClientSize = new System.Drawing.Size(822, 228);
             this.Controls.Add(this.TxtHasil);
             this.Controls.Add(this.Txt2);
             this.Controls.Add(this.Txt1);
