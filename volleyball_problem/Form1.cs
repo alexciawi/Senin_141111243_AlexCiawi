@@ -23,26 +23,7 @@ namespace volleyball_problem
             ScoreA = Convert.ToInt64(Txt1.Text);
             ScoreB = Convert.ToInt64(Txt2.Text);
 
-            if(ScoreA < 25 && ScoreB < 25)
-            {
-                n = ScoreA + ScoreB;
-                for (i = n; i > 0; i--)
-                {
-                    c1 *= i;
-                }
-                for (j = (n - ScoreB); j > 0; j--)
-                {
-                    c2 *= j;
-                }
-                for (k = ScoreB; k > 0; k--)
-                {
-                    c3 *= k;
-                }
-                result = c1 / (c2 * c3);
-                TxtHasil.Text = Convert.ToString(result);
-            }
-
-            else
+            if ((ScoreA >= 0 && ScoreB <= Math.Pow(10, 9)) || (ScoreB >= 0 && ScoreA <= Math.Pow(10, 9)))
             {
                 if ((ScoreA == 25 && ScoreB < 24) || (ScoreB == 25 && ScoreA < 24))
                 {
@@ -69,62 +50,91 @@ namespace volleyball_problem
                     result = c1 / (c2 * c3);
                     TxtHasil.Text = Convert.ToString(result);
                 }
-                else if ((ScoreA == ScoreB+2 && ScoreB > 23) || (ScoreB == ScoreA + 2 && ScoreA > 23))
+
+                else
                 {
-                    if (ScoreA > 23)
+                    if ((ScoreA == (ScoreB + 2) && ScoreB > 23) || (ScoreB == (ScoreA + 2) && ScoreA > 23))
                     {
-                        n = ScoreA;
+                        if (ScoreA > 23)
+                        {
+                            n = ScoreA;
+                        }
+                        else
+                        {
+                            n = ScoreB;
+                        }
+                        for (i = 48; i > 0; i--)
+                        {
+                            c1 *= i;
+                        }
+                        for (j = (48 - 24); j > 0; j--)
+                        {
+                            c2 *= j;
+                        }
+                        for (k = 24; k > 0; k--)
+                        {
+                            c3 *= k;
+                        }
+                        result = (c1 / (c2 * c3)) * Math.Pow(2, n - 24);
+                        TxtHasil.Text = Convert.ToString(result);
+                    }
+                    else if (ScoreA < 0 || ScoreB < 0 || Math.Abs(ScoreA - ScoreB) > 1)
+                    {
+                        result = 0;
+                        TxtHasil.Text = Convert.ToString(result);
+                    }
+                    else if (ScoreA == 24 && ScoreB == 24)
+                    {
+                        MessageBox.Show("JUICE!!!");
+                        MessageBox.Show("The teams continue to play until the absolute difference between the scores is 2.");
+                    }
+                    else if (ScoreA < 25 && ScoreB < 25)
+                    {
+                        n = ScoreA + ScoreB;
+                        for (i = n; i > 0; i--)
+                        {
+                            c1 *= i;
+                        }
+                        for (j = (n - ScoreB); j > 0; j--)
+                        {
+                            c2 *= j;
+                        }
+                        for (k = ScoreB; k > 0; k--)
+                        {
+                            c3 *= k;
+                        }
+                        result = c1 / (c2 * c3);
+                        TxtHasil.Text = Convert.ToString(result);
                     }
                     else
                     {
-                        n = ScoreB;
+                        MessageBox.Show("The teams continue to play until the absolute difference between the scores is 2.");
                     }
-                    for (i = 48; i > 0; i--)
+                }
+                if (TxtHasil.Text == "0")
+                {
+                    if (ScoreA > ScoreB)
                     {
-                        c1 *= i;
+                        MessageBox.Show("The winner is: A");
                     }
-                    for (j = (48 - 24); j > 0; j--)
+                    else
                     {
-                        c2 *= j;
+                        MessageBox.Show("The winner is: B");
                     }
-                    for (k = 24; k > 0; k--)
-                    {
-                        c3 *= k;
-                    }
-                    result = (c1 / (c2 * c3)) * Math.Pow(2,n-24);
+                }
+                else if (result > 1000000007)
+                {
+                    result %= 1000000007;
                     TxtHasil.Text = Convert.ToString(result);
                 }
-                else if (ScoreA < 0 || ScoreB < 0 || Math.Abs(ScoreA - ScoreB) > 1)
-                {
-                    result = 0;
-                    TxtHasil.Text = Convert.ToString(result);
-                }
-                else if (ScoreA == 24 && ScoreB == 24)
-                {
-                    MessageBox.Show("JUICE!!!");
-                    MessageBox.Show("The teams continue to play until the absolute difference between the scores is 2.");
-                }
-                else
-                {
-                    MessageBox.Show("The teams continue to play until the absolute difference between the scores is 2.");
-                }
             }
-            if (TxtHasil.Text=="0")
+
+            else
             {
-                if(ScoreA>ScoreB)
-                {
-                    MessageBox.Show("The winner is: A");
-                }
-                else
-                {
-                    MessageBox.Show("The winner is: B");
-                }
+                MessageBox.Show("Input score is wrong!!!");
             }
-            else if (result > 1000000007)
-            {
-                result %= 1000000007;
-                TxtHasil.Text = Convert.ToString(result);
-            }
+
+            
         }
     }
 }
