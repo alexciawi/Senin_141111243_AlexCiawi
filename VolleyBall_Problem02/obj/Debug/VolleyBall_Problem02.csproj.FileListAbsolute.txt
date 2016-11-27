@@ -1,0 +1,12 @@
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\bin\Debug\volleyball_problem.exe.config
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\obj\Debug\volleyball_problem.exe
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\obj\Debug\volleyball_problem.pdb
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\bin\Debug\volleyball_problem.exe
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\bin\Debug\volleyball_problem.pdb
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\obj\Debug\VolleyBall_Problem02.csprojResolveAssemblyReference.cache
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\obj\Debug\volleyball_problem.Form1.resources
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\obj\Debug\volleyball_problem.Properties.Resources.resources
+D:\Senin_141111243_AlexCiawi\volleyball_problem2\obj\Debug\VolleyBall_Problem02.csproj.GenerateResource.Cache
+D:\Senin_141111243_AlexCiawi\VolleyBall_Problem02\bin\Debug\volleyball_problem.exe.config
+D:\Senin_141111243_AlexCiawi\VolleyBall_Problem02\obj\Debug\volleyball_problem.exe
+D:\Senin_141111243_AlexCiawi\VolleyBall_Problem02\obj\Debug\volleyball_problem.pdb
