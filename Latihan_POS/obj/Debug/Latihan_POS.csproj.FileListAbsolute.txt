@@ -1,0 +1,14 @@
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\Latihan_POS.exe.config
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\Latihan_POS.exe
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\Latihan_POS.pdb
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\MaterialSkin.dll
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\MetroFramework.Design.dll
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\MetroFramework.dll
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\bin\Debug\MySql.Data.dll
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\obj\Debug\Latihan_POS.csprojResolveAssemblyReference.cache
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\obj\Debug\Latihan_POS.Form1.resources
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\obj\Debug\Latihan_POS.Properties.Resources.resources
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\obj\Debug\Latihan_POS.csproj.GenerateResource.Cache
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\obj\Debug\Latihan_POS.exe
+C:\Users\Alex Ciawi\Desktop\Senin_141111243_AlexCiawi\Latihan_POS\obj\Debug\Latihan_POS.pdb
